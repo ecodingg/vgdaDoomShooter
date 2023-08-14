@@ -6,7 +6,7 @@ using TMPro;
 public class ammoToScreen : MonoBehaviour
 {
 
-    public Pistol pistol;
+    public rayCastPistol pistol;
     private float ammo;
     private int ammoInt;
     public TextMeshProUGUI ammoText;
@@ -16,7 +16,7 @@ public class ammoToScreen : MonoBehaviour
     void Update()
     {
         //Return current amount of bullets
-        ammo = pistol.bulletCount();
+        ammo = pistol.bltCount();
 
         //Display Bullets to Screen
         int ammoInt = (int)ammo;
