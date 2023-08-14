@@ -1,0 +1,8 @@
+.button {
+    font-size: 40px;
+    width: 370px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 255);
+    -unity-background-image-tint-color: rgba(0, 0, 0, 255);
+    margin-bottom: 25px;
+}
