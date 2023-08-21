@@ -95,7 +95,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b10d8610ced695498c71c367f8d0a23, type: 2}
+  - {fileID: 2100000, guid: aa3f172d9e7b94b419c5180f7d99f377, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,3 +145,4 @@ MonoBehaviour:
   damage: 10
   range: 100
   fpsCam: {fileID: 0}
+  muzzleFlash: {fileID: 0}

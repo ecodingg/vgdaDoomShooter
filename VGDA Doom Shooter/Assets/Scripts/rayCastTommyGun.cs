@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rayCastPistol : MonoBehaviour
+public class rayCastTommyGun : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
+    public float damage = 12.5f;
+    public float range = 50f;
 
     public Camera fpsCam;
 
-    private float maxBullets = 6;
+    private float maxBullets = 30;
 
     private float bullets;
 
@@ -17,16 +17,19 @@ public class rayCastPistol : MonoBehaviour
     
     void Start()
     {
-        bullets = maxBullets;   
+        bullets = maxBullets;
+        //StartCoroutine(tommyGun());   
     }
 
     // Update is called once per frame
+    //IEnumerator tommyGun()
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")){
+        if (Input.GetKey(KeyCode.Mouse0)){
             if (bullets >= 1){
                 Shoot();
                 bullets -= 1;
+                //yield return new WaitForSeconds(2);
             }
         }
          
@@ -49,7 +52,6 @@ public class rayCastPistol : MonoBehaviour
             {
                 target.TakeDamage(damage);
             }
-
         }
     }
 
