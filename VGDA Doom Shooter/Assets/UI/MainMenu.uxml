@@ -1,11 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/ButtonStyle.uss?fileID=7433441132597879392&amp;guid=c3bc908a11518994fba44593a085b37b&amp;type=3#ButtonStyle" />
-    <ui:VisualElement style="justify-content: center; align-items: center;">
-        <ui:IMGUIContainer name="TitleContainer" style="width: 1583px; height: 299px; align-items: flex-start; justify-content: flex-end; padding-left: 250px;">
-            <ui:Label text="Untitled" display-tooltip-when-elided="true" style="align-items: center; justify-content: center; -unity-text-align: middle-center; white-space: normal; font-size: 150px;" />
+    <Style src="project://database/Assets/UI/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=c3bc908a11518994fba44593a085b37b&amp;type=3#GeneralStyle" />
+    <ui:VisualElement style="justify-content: center; align-items: center; padding-top: 0; width: auto; height: auto;">
+        <ui:IMGUIContainer name="TitleContainer" class="title" style="width: 1583px; height: 279px; align-items: flex-start; justify-content: flex-end; padding-left: 230px; padding-top: 0; margin-top: 40px; position: relative;">
+            <ui:Label text="Untitled" display-tooltip-when-elided="true" style="font-size: 230px; height: 205px;" />
         </ui:IMGUIContainer>
     </ui:VisualElement>
-    <ui:VisualElement name="ButtonContainer" style="height: 432px; align-items: flex-end; justify-content: flex-start; padding-right: 250px; margin-top: 20px;">
+    <ui:VisualElement name="ButtonContainer" style="height: 432px; align-items: flex-end; justify-content: flex-start; padding-right: 270px; margin-top: 0; margin-bottom: 70px;">
         <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" />
         <ui:Button text="Options" display-tooltip-when-elided="true" name="Options" class="button" />
         <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
