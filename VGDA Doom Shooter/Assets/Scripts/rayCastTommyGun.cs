@@ -25,7 +25,7 @@ public class rayCastTommyGun : MonoBehaviour
     //IEnumerator tommyGun()
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0)){
+        if (Input.GetButtonDown("Fire1")){
             if (bullets >= 1){
                 Shoot();
                 bullets -= 1;
@@ -36,6 +36,8 @@ public class rayCastTommyGun : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)){
             Reload();
         }
+
+        
     }
 
     void Shoot()

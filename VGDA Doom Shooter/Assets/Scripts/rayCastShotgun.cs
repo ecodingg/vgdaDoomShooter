@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rayCastPistol : MonoBehaviour
+public class rayCastShotgun : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
 
     public Camera fpsCam;
 
-    private float maxBullets = 6;
+    private float maxBullets = 13;
 
     private float bullets;
 

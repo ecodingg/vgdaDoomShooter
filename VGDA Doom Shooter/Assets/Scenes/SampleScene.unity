@@ -5373,17 +5373,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1254826859 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8354696860311813241, guid: d72be5c99e2ac934198654a5c6f8d57d, type: 3}
-  m_PrefabInstance: {fileID: 2018751669}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf5de441f2cb3f40a33a6318b3bdd97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &1522790219 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2455850664026367377, guid: f807dc1779bee114c9fdb834683ddf2b, type: 3}
@@ -5402,12 +5391,12 @@ GameObject:
   - component: {fileID: 1603029821}
   - component: {fileID: 1603029823}
   m_Layer: 5
-  m_Name: PIstolText
+  m_Name: ShotgunText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1603029819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5537,7 +5526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c83567a6610d745a337383d4159a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pistol: {fileID: 1254826859}
+  shotgun: {fileID: 0}
   ammoText: {fileID: 1603029821}
 --- !u!20 &1649822242 stripped
 Camera:
@@ -5656,11 +5645,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5862446795666096664, guid: d72be5c99e2ac934198654a5c6f8d57d, type: 3}
       propertyPath: m_Name
-      value: raycastPistol
+      value: raycastShotgun
       objectReference: {fileID: 0}
     - target: {fileID: 5862446795666096664, guid: d72be5c99e2ac934198654a5c6f8d57d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5862446795666096665, guid: d72be5c99e2ac934198654a5c6f8d57d, type: 3}
       propertyPath: m_RootOrder
@@ -5734,7 +5723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2120717612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6005,7 +5994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8308991119620355617, guid: f807dc1779bee114c9fdb834683ddf2b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5901184103585302592, guid: f807dc1779bee114c9fdb834683ddf2b, type: 3}

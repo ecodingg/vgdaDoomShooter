@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ammoToScreen : MonoBehaviour
+public class shotgunToScreen : MonoBehaviour
 {
 
-    public rayCastPistol pistol;
+    public rayCastShotgun shotgun;
     private float ammo;
     private int ammoInt;
     public TextMeshProUGUI ammoText;
@@ -16,11 +16,11 @@ public class ammoToScreen : MonoBehaviour
     void Update()
     {
         //Return current amount of bullets
-        ammo = pistol.bltCount();
+        ammo = shotgun.bltCount();
 
         //Display Bullets to Screen
         int ammoInt = (int)ammo;
-        ammoText.text = ammoInt.ToString() + "/6";
+        ammoText.text = ammoInt.ToString() + "/13";
 
     }
 }
