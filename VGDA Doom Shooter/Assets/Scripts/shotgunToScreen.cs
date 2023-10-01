@@ -6,9 +6,8 @@ using TMPro;
 public class shotgunToScreen : MonoBehaviour
 {
 
-    public rayCastShotgun shotgun;
-    private float ammo;
-    private int ammoInt;
+    public GunSystem shotgun;
+    private string ammo;
     public TextMeshProUGUI ammoText;
 
 
@@ -18,9 +17,8 @@ public class shotgunToScreen : MonoBehaviour
         //Return current amount of bullets
         ammo = shotgun.bltCount();
 
-        //Display Bullets to Screen
-        int ammoInt = (int)ammo;
-        ammoText.text = ammoInt.ToString() + "/13";
+        ammoText.text = ammo;
+
 
     }
 }

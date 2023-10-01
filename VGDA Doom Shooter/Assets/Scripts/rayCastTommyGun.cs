@@ -25,6 +25,7 @@ public class rayCastTommyGun : MonoBehaviour
     //IEnumerator tommyGun()
     void Update()
     {
+        //Shoot
         if (Input.GetButtonDown("Fire1")){
             if (bullets >= 1){
                 Shoot();
@@ -32,7 +33,8 @@ public class rayCastTommyGun : MonoBehaviour
                 //yield return new WaitForSeconds(2);
             }
         }
-         
+        
+        //Reload
         if (Input.GetKeyDown(KeyCode.R)){
             Reload();
         }
@@ -60,10 +62,5 @@ public class rayCastTommyGun : MonoBehaviour
     void Reload()
     {
         bullets = maxBullets;
-    }
-
-    public float bltCount()
-    {
-        return bullets;
     }
 }

@@ -6,9 +6,8 @@ using TMPro;
 public class tommyToScreen : MonoBehaviour
 {
 
-    public rayCastTommyGun tommy;
-    private float ammo;
-    private int ammoInt;
+    public GunSystem tommy, shotgun;
+    private string ammo;
     public TextMeshProUGUI ammoText;
 
 
@@ -16,11 +15,15 @@ public class tommyToScreen : MonoBehaviour
     void Update()
     {
         //Return current amount of bullets
-        ammo = tommy.bltCount();
+        if (tommy.gameObject.activeInHierarchy){
+            ammo = tommy.bltCount();
+            ammoText.text = ammo;
+        }
+        else if(shotgun.gameObject.activeInHierarchy){
+            ammo = shotgun.bltCount();
+            ammoText.text = ammo;
+        }
 
-        //Display Bullets to Screen
-        int ammoInt = (int)ammo;
-        ammoText.text = ammoInt.ToString() + "/30";
 
     }
 }

@@ -12,6 +12,7 @@ public class rayCastShotgun : MonoBehaviour
     private float maxBullets = 13;
 
     private float bullets;
+    private float spread;
 
     public ParticleSystem muzzleFlash;
     
