@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74dd49489e1434c2cbf14c03f094710b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  healthP: 0
   maxHealth: 100
 --- !u!1 &271794335
 GameObject:
@@ -394,7 +394,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321c538973eae42758c2c432b89c04fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: {fileID: 0}
+  damageP: 10
   lookRadius: 10
+  health: 20
+  timeBetweenAttacks: 0
 --- !u!114 &271794341
 MonoBehaviour:
   m_ObjectHideFlags: 0
