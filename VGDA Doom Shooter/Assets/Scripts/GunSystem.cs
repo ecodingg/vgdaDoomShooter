@@ -68,7 +68,7 @@ public class GunSystem : MonoBehaviour
         {
             Debug.Log(rayHit.collider.name);
 
-            Target target = rayHit.transform.GetComponent<Target>();
+            EnemyController target = rayHit.transform.GetComponent<EnemyController>();
             if (target != null)
             {
                 target.TakeDamage(damage);
