@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=c3bc908a11518994fba44593a085b37b&amp;type=3#GeneralStyle" />
+    <ui:VisualElement name="Container" style="height: auto;">
+        <ui:GroupBox style="background-color: rgba(89, 89, 89, 0.68); height: 726px; margin-left: 200px; margin-right: 200px; margin-top: 0; margin-bottom: 0; padding-left: 100px; padding-top: 50px; padding-bottom: 50px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; padding-right: 100px;">
+            <ui:VisualElement name="TitleContainer" style="height: 201px; width: 975px; align-items: center; margin-bottom: 30px;">
+                <ui:Label text="Paused" display-tooltip-when-elided="true" class="title" style="padding-left: 0; padding-right: 0; width: 533px; align-items: auto;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ButtonContainer" style="align-items: center;">
+                <ui:Button text="Resume" display-tooltip-when-elided="true" name="Resume" class="button" />
+                <ui:Button text="Options" display-tooltip-when-elided="true" name="Options" class="button" />
+                <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
