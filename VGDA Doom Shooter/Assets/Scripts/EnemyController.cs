@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     Transform target; // aka player
     NavMeshAgent agent;
 
-    public float health;
+    public float health = 50;
 
     //attacking
     public float timeBetweenAttacks;
