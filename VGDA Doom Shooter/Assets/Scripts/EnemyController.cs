@@ -47,6 +47,19 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damageP);
+            }
+        }
+
+    }
+
     private void AttackPlayer() //work in progress
     {
         Debug.Log("AttackPlayer called");
@@ -59,7 +72,7 @@ public class EnemyController : MonoBehaviour
         {
             //actuall attack code goes here
 
-            playerHealth.TakeDamage(damageP);
+            //playerHealth.TakeDamage(damageP);
 
             //
 
@@ -87,11 +100,15 @@ public class EnemyController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
+
+
+    //these below arent really used since the function from PlayerHealth is being called
     public void TakeDamage(int damage)
     {
         health -= damage;
 
-        if (health <= 0){
+        if (health <= 0)
+        {
             DestroyEnemy();
         }
     }
