@@ -5,13 +5,13 @@ using UnityEngine.Events;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public int NumberCollected { get; private set; }
+    public int PacksCollected { get; private set; }
 
-    public UnityEvent<PlayerInventory> OnGemCollected;
+    public UnityEvent<PlayerInventory> OnHealthPCollected;
 
     public void ItemCollected()
     {
-        NumberCollected++;
-        OnGemCollected.Invoke(this);
+        PacksCollected++;
+        OnHealthPCollected.Invoke(this);
     }
 }
