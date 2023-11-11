@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.118899934, g: 0.31090936, b: 0.3529911, a: 1}
+>>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5037,6 +5041,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthP: 0
   maxHealth: 100
+  shot: {fileID: 767569285}
+  tom: {fileID: 2113940409}
+  shotgun: {fileID: 767569291}
+  tommy: {fileID: 2113940411}
 --- !u!114 &375371920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5293,6 +5301,7 @@ MonoBehaviour:
   timeBetweenShots: 0
   magazineSize: 13
   bulletsPerTap: 2
+  maxAmmo: 65
   allowButtonHold: 1
   fpsCam: {fileID: 1649822242}
   attackPoint: {fileID: 972156028}
@@ -5861,6 +5870,7 @@ MonoBehaviour:
   timeBetweenShots: 0
   magazineSize: 30
   bulletsPerTap: 1
+  maxAmmo: 150
   allowButtonHold: 1
   fpsCam: {fileID: 1649822242}
   attackPoint: {fileID: 779273434}
@@ -6226,3 +6236,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 744185d147be1de45b66d023256abc05, type: 3}
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &6403129365854948214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6403129366268224241, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_Name
+      value: Ammo Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 505.83493
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 495.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224250, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403129366268224254, guid: bc045e59160876540b9f070025908281, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 375371919}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc045e59160876540b9f070025908281, type: 3}
+>>>>>>> Stashed changes

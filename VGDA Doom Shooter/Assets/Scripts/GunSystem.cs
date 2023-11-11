@@ -8,9 +8,12 @@ public class GunSystem : MonoBehaviour
     //Gun stats
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;
-    public int magazineSize, bulletsPerTap;
+    public int magazineSize, bulletsPerTap, maxAmmo;
     public bool allowButtonHold;
     int bulletsLeft, bulletsShot;
+    // private int shotgunMag = 26;
+    // private int tommyMag = 60;
+    // public GunSystem gun;
 
     //bools 
     bool shooting, readyToShoot, reloading;
@@ -103,5 +106,12 @@ public class GunSystem : MonoBehaviour
 
     public string bltCount(){
         return bulletsLeft + "/" + magazineSize;
+    }
+
+    public void collectAmmo(int n){
+        magazineSize += n;
+        if (magazineSize == maxAmmo){
+            magazineSize = maxAmmo;
+        }
     }
 }
