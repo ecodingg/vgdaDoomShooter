@@ -61,7 +61,8 @@ public class EnemyController : MonoBehaviour
         {
             //actuall attack code goes here
 
-            //playerHealth.TakeDamage(damageP);
+            playerHealth.TakeDamage(damageP);
+            Debug.Log("Attack player");
 
             //
 
