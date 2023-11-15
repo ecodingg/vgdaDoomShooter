@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,7 @@ public class EnemyController : MonoBehaviour
 
     //attacking
     public float timeBetweenAttacks;
+    public float attackDistance = 10f;
     bool alreadyAttacked;
 
 
@@ -33,11 +35,11 @@ public class EnemyController : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if(distance <= lookRadius)
+        if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
 
-            if(distance <= agent.stoppingDistance)
+            if (distance <= agent.stoppingDistance)
             {
                 //Attack
                 AttackPlayer();
@@ -47,24 +49,11 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damageP);
-            }
-        }
-
-    }
-
     private void AttackPlayer() //work in progress
     {
         Debug.Log("AttackPlayer called");
 
-        agent.SetDestination(transform.position);
+        agent.SetDestination(target.position);
 
         transform.LookAt(target);
 
@@ -83,7 +72,7 @@ public class EnemyController : MonoBehaviour
 
     private void ResetAttack()
     {
-        alreadyAttacked = false; 
+        alreadyAttacked = false;
     }
 
     void FaceTarget()
@@ -100,9 +89,6 @@ public class EnemyController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
-
-
-    //these below arent really used since the function from PlayerHealth is being called
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -118,3 +104,4 @@ public class EnemyController : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
