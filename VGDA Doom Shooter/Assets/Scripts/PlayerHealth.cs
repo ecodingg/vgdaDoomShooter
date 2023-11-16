@@ -7,11 +7,13 @@ public class PlayerHealth : MonoBehaviour
 
     public int healthP;
     public int maxHealth = 100;
+    public EnemyController enemyDamage;
 
     // Start is called before the first frame update
     void Start()
     {
         healthP = maxHealth;
+        enemyDamage = GetComponent<EnemyController>();
     }
 
     // Update is called once per frame
@@ -30,4 +32,12 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player died lol");
         }
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.tag == "Enemy") {
+            Debug.Log("Name of the object: " + other.gameObject.name);
+            TakeDamage(enemyDamage);
+        }
+    }
+
 }
