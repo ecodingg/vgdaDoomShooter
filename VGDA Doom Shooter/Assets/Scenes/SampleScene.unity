@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11890097, g: 0.3109121, b: 0.352994, a: 1}
+  m_IndirectSpecularColor: {r: 0.118899934, g: 0.31090936, b: 0.3529911, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5692,6 +5692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5185187343302009351, guid: fd83a50fd7654c642bacf9546670a2a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f741071e2c09a2841bca3b5218c2f98b, type: 2}
     - target: {fileID: 919132149155446097, guid: fd83a50fd7654c642bacf9546670a2a2, type: 3}
       propertyPath: m_Name
       value: csulb psych 0003
@@ -5703,6 +5707,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd83a50fd7654c642bacf9546670a2a2, type: 3}
   m_PrefabInstance: {fileID: 2058410150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2058410152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fd83a50fd7654c642bacf9546670a2a2, type: 3}
+  m_PrefabInstance: {fileID: 2058410150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2058410153
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058410152}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7510148731157660559, guid: fd83a50fd7654c642bacf9546670a2a2, type: 3}
 --- !u!1 &2113940409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8308991119620355617, guid: f807dc1779bee114c9fdb834683ddf2b, type: 3}
