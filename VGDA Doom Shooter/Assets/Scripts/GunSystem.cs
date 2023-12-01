@@ -25,6 +25,8 @@ public class GunSystem : MonoBehaviour
     //public CamShake camShake;
     //public float camShakeMagnitude, camShakeDuration;
     public TextMeshProUGUI text;
+    public AudioSource gunShot;//,reload
+    public AudioClip impact, reload;
 
     private void Awake()
     {
@@ -43,7 +45,10 @@ public class GunSystem : MonoBehaviour
         if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
 
-        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
+        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading){
+            Reload();
+            gunShot.PlayOneShot(reload, 0.7f);
+        } 
 
         //Shoot
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0){
@@ -64,6 +69,8 @@ public class GunSystem : MonoBehaviour
 
         //RayCast
         muzzleFlash.Play();
+        gunShot.PlayOneShot(impact, 0.7f);
+        Debug.Log("Playing Gunshot");
         if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range))
         {
             Debug.Log(rayHit.collider.name);
