@@ -6,7 +6,7 @@
         </ui:IMGUIContainer>
     </ui:VisualElement>
     <ui:VisualElement name="ButtonContainer" style="height: 432px; align-items: flex-end; justify-content: flex-start; padding-right: 270px; margin-top: 0; margin-bottom: 70px;">
-        <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" />
+        <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" style="background-color: rgba(0, 0, 0, 255);" />
         <ui:Button text="Options" display-tooltip-when-elided="true" name="Options" class="button" />
         <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
     </ui:VisualElement>
