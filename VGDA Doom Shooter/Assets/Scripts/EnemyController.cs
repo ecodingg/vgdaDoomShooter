@@ -55,7 +55,7 @@ public class EnemyController : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            playerHealth.TakeDamage(damageP);
+            //player takes damage when coming in contact with player - code in player health script
             Debug.Log("Attack player");
 
             alreadyAttacked = true;
