@@ -8,19 +8,17 @@ public class EnemyController : MonoBehaviour
 {
 
     public PlayerHealth playerHealth;
-    public int damageP = 10;
-
+    public int damageP = 10; //damage enemey deals
     public float lookRadius = 10f;
+    public float attackDistance = 10f;
+    public float timeBetweenAttacks;
 
     Transform target; // aka player
     NavMeshAgent agent;
-
-    public float health;
-
-    //attacking
-    public float timeBetweenAttacks;
-    public float attackDistance = 10f;
+    
     bool alreadyAttacked;
+
+    public float health; //Enemy Health
 
 
     // Start is called before the first frame update
@@ -41,9 +39,7 @@ public class EnemyController : MonoBehaviour
 
             if (distance <= agent.stoppingDistance)
             {
-                //Attack
                 AttackPlayer();
-                //Face Target
                 FaceTarget();
             }
         }
@@ -59,12 +55,8 @@ public class EnemyController : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            //actuall attack code goes here
-
             playerHealth.TakeDamage(damageP);
             Debug.Log("Attack player");
-
-            //
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
