@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Enemy") {
             Debug.Log("Name of the object: " + other.gameObject.name);
-            TakeDamage(enemyDamage);
+            TakeDamage(10);
         }
     }
 
