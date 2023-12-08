@@ -5094,11 +5094,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5039890266113960391, guid: 33e216728226548269939db88a2aad08, type: 3}
       propertyPath: m_Size.x
-      value: 10.97
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5039890266113960391, guid: 33e216728226548269939db88a2aad08, type: 3}
       propertyPath: m_Size.y
-      value: 8.42
+      value: 0.7285156
       objectReference: {fileID: 0}
     - target: {fileID: 5039890266113960391, guid: 33e216728226548269939db88a2aad08, type: 3}
       propertyPath: m_Sprite
