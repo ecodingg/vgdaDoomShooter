@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fbc23403b46d4412397d62579ed6af25
+guid: fbffb2827fcc04db6a73aef6a7f8799d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1102
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AlilakeyDeathLineArt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1102
+        height: 802
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b71b8c0adb44d8e83a3b4fdede0be6
+      internalID: 622498044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlilakeyDeathLineArt_1
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 0
+        width: 1102
+        height: 802
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfc51010781a4c169e25273abaa0145
+      internalID: -319858746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlilakeyDeathLineArt_2
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 0
+        width: 1102
+        height: 802
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619431bb62a804c639c1d59fbb77924c
+      internalID: 1637784820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlilakeyDeathLineArt_3
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 0
+        width: 1102
+        height: 802
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ae6fc62bb1643ae948215c426c956a
+      internalID: 62061557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +198,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AlilakeyDeathLineArt_0: 622498044
+      AlilakeyDeathLineArt_1: -319858746
+      AlilakeyDeathLineArt_2: 1637784820
+      AlilakeyDeathLineArt_3: 62061557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
