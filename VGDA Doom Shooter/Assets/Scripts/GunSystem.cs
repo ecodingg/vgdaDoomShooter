@@ -24,7 +24,7 @@ public class GunSystem : MonoBehaviour
     public ParticleSystem muzzleFlash;
     //public CamShake camShake;
     //public float camShakeMagnitude, camShakeDuration;
-    public TextMeshProUGUI text;
+    //public TextMeshProUGUI text;
 
     private void Awake()
     {
@@ -36,7 +36,7 @@ public class GunSystem : MonoBehaviour
         MyInput();
 
         //SetText
-        text.SetText(bulletsLeft + " / " + magazineSize);
+        //text.SetText(bulletsLeft + " / " + magazineSize);
     }
     private void MyInput()
     {

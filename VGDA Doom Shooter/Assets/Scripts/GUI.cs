@@ -7,6 +7,7 @@ public class GUI : MonoBehaviour
 {
     public UIDocument uiDocument;
     public GunSystem tommy, shotgun;
+    public PlayerHealth playerHealth;
 
     private Label ammoLabel;
 
@@ -47,6 +48,26 @@ public class GUI : MonoBehaviour
     {
         // Get the ammo count from the Shotgun gun system
         return shotgun.bltCount();
+    }
+
+    //player health
+    void CurrentHealth()
+    {
+        int health = playerHealth.GetCurrentHealth();
+        int maxHealth = playerHealth.GetMaxHealth();
+
+        int healthP1 = maxHealth / 2;
+        int healthP2 = maxHealth / 4;
+
+        if (health >= healthP1)
+        {
+            Debug.Log("health over 50%");
+        }
+
+        if (health >= healthP2)
+        {
+            Debug.Log("health over 25%");
+        }
     }
 }
 
