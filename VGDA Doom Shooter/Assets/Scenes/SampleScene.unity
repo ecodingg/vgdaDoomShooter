@@ -5061,6 +5061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthP: 0
   maxHealth: 100
+  collider: {fileID: 375371924}
 --- !u!114 &375371920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5082,12 +5083,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375371915}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.76694393
+  m_Radius: 0.7135404
   m_Height: 4.298254
   m_Direction: 1
-  m_Center: {x: -0.015613914, y: 0.11430311, z: 0.004723549}
+  m_Center: {x: 0.037789643, y: 0.11430311, z: 0.004723549}
 --- !u!198 &568962349 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2455850664026367377, guid: f807dc1779bee114c9fdb834683ddf2b, type: 3}
@@ -5382,6 +5383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthP: 0
   maxHealth: 100
+  collider: {fileID: 375371924}
 --- !u!4 &963194228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5200095832883157144, guid: 744185d147be1de45b66d023256abc05, type: 3}

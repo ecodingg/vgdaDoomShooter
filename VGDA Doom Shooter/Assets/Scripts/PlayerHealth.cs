@@ -27,7 +27,8 @@ public class PlayerHealth : MonoBehaviour
         healthP -= amount;
         if(healthP <= 0)
         {
-            Destroy(gameObject);
+            Debug.Log("player died");
+            //Destroy(gameObject);
         }
     }
 
@@ -45,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
     //collider to detect getting hit
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy".CompareTag) //so it only collides with enemy tags
+        if (other.CompareTag("Enemy")) //so it only collides with enemy tags
         {
             TakeDamage(10);
         }
