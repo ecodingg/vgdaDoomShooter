@@ -6,6 +6,11 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    ////code for animations
+    //private Animator animator;
+    //private bool isAttacking = false;
+    //private bool isWalking = false;
+    ////
 
     public PlayerHealth playerHealth;
     public int damageP = 10; //damage enemey deals
@@ -24,6 +29,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //animator = GetComponent<Animator>();
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
@@ -43,6 +49,15 @@ public class EnemyController : MonoBehaviour
                 FaceTarget();
             }
         }
+
+        //For Animations
+        //isAttacking = distance <= attackDistance;
+        //isWalking = distance > attackDistance;
+
+        
+        //animator.SetBool("Attack", isAttacking);
+        //animator.SetBool("Walk", isWalking);
+
     }
 
     private void AttackPlayer() //work in progress
