@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         if(!isGrounded || x == 0 && z == 0){
             audioData.Pause();
         }
-        Debug.Log(move);
+        //Debug.Log(move);
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
