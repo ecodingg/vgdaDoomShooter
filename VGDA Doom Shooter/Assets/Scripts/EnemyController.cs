@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,25 +6,30 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    ////code for animations
+    //private Animator animator;
+    //private bool isAttacking = false;
+    //private bool isWalking = false;
+    ////
 
     public PlayerHealth playerHealth;
-    public int damageP = 10;
-
+    public int damageP = 10; //damage enemey deals
     public float lookRadius = 10f;
+    public float attackDistance = 10f;
+    public float timeBetweenAttacks;
 
     Transform target; // aka player
     NavMeshAgent agent;
-
-    public float health = 50;
-
-    //attacking
-    public float timeBetweenAttacks;
+    
     bool alreadyAttacked;
+
+    public float health; //Enemy Health
 
 
     // Start is called before the first frame update
     void Start()
     {
+        //animator = GetComponent<Animator>();
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
@@ -33,35 +39,39 @@ public class EnemyController : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if(distance <= lookRadius)
+        if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
 
-            if(distance <= agent.stoppingDistance)
+            if (distance <= agent.stoppingDistance)
             {
-                //Attack
                 AttackPlayer();
-                //Face Target
                 FaceTarget();
             }
         }
+
+        //For Animations
+        //isAttacking = distance <= attackDistance;
+        //isWalking = distance > attackDistance;
+
+        
+        //animator.SetBool("Attack", isAttacking);
+        //animator.SetBool("Walk", isWalking);
+
     }
 
     private void AttackPlayer() //work in progress
     {
         Debug.Log("AttackPlayer called");
 
-        agent.SetDestination(transform.position);
+        agent.SetDestination(target.position);
 
         transform.LookAt(target);
 
         if (!alreadyAttacked)
         {
-            //actuall attack code goes here
-
-            playerHealth.TakeDamage(damageP);
-
-            //
+            //player takes damage when coming in contact with player - code in player health script
+            Debug.Log("Attack player");
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -70,7 +80,7 @@ public class EnemyController : MonoBehaviour
 
     private void ResetAttack()
     {
-        alreadyAttacked = false; 
+        alreadyAttacked = false;
     }
 
     void FaceTarget()
@@ -91,7 +101,8 @@ public class EnemyController : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0){
+        if (health <= 0)
+        {
             DestroyEnemy();
         }
     }
@@ -101,3 +112,4 @@ public class EnemyController : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
