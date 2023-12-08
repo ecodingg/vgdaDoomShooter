@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=c3bc908a11518994fba44593a085b37b&amp;type=3#GeneralStyle" />
     <ui:VisualElement style="justify-content: center; align-items: center; padding-top: 0; width: auto; height: auto;">
-        <ui:IMGUIContainer name="TitleContainer" class="title" style="width: 1589px; height: 229px; align-items: flex-start; justify-content: flex-end; padding-left: 0; padding-top: 0; margin-top: 300px; position: relative; margin-right: 0; padding-bottom: 0; padding-right: 0;">
-            <ui:Label text="Invasion of the&#10;Allilackeys" display-tooltip-when-elided="true" name="Title" style="font-size: 145px; height: 337px; width: 1589px; -unity-font: url(&apos;project://database/Assets/UI/fonts/Bondrians.ttf?fileID=12800000&amp;guid=020e0f0476a49154fa6e78f8c004ddd7&amp;type=3#Bondrians&apos;); -unity-text-align: lower-center; padding-left: 0; padding-right: 450px; margin-right: 0;" />
+        <ui:IMGUIContainer name="TitleContainer" class="title" style="width: 1921px; height: 229px; align-items: flex-start; justify-content: flex-end; padding-left: 0; padding-top: 0; margin-top: 300px; position: relative; margin-right: 0; padding-bottom: 0; padding-right: 0;">
+            <ui:Label text="Invasion of the&#10;Allilackeys" display-tooltip-when-elided="true" name="Title" style="font-size: 200px; height: 533px; width: 1920px; -unity-font: url(&apos;project://database/Assets/UI/fonts/Bondrians.ttf?fileID=12800000&amp;guid=020e0f0476a49154fa6e78f8c004ddd7&amp;type=3#Bondrians&apos;); -unity-text-align: lower-center; padding-left: 0; padding-right: 450px; margin-right: 0;" />
         </ui:IMGUIContainer>
-    </ui:VisualElement>
-    <ui:VisualElement name="ButtonContainer" style="height: 432px; align-items: flex-end; justify-content: flex-start; padding-right: 180px; margin-top: 0; margin-bottom: 40px;">
-        <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" style="background-color: rgba(0, 0, 0, 0);" />
-        <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
+        <ui:VisualElement name="ButtonContainer" style="height: 504px; align-items: flex-end; justify-content: flex-start; padding-right: 180px; margin-top: 0; margin-bottom: 40px; width: 1928px;">
+            <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" class="button" style="background-color: rgba(0, 0, 0, 0); height: 240px; width: 650px;" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -1,7 +1,7 @@
 .button {
-    font-size: 65px;
-    width: 490px;
-    height: 150px;
+    font-size: 85px;
+    width: 650px;
+    height: 240px;
     background-color: rgba(0, 0, 0, 0);
     -unity-background-image-tint-color: rgb(0, 0, 0);
     margin-bottom: 0;
@@ -12,10 +12,12 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
+    color: rgba(204, 204, 204, 255);
 }
 
 .title {
     -unity-font: url('project://database/Assets/UI/fonts/bondrians/Bondrians.ttf?fileID=12800000&guid=288136f92b46c3e498dea540a3b94304&type=3#Bondrians');
     font-size: 250px;
     -unity-font-definition: initial;
+    color: rgba(0, 0, 0, 255);
 }
