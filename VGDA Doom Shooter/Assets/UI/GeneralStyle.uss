@@ -12,12 +12,19 @@
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
-    color: rgba(204, 204, 204, 255);
+    color: rgb(204, 204, 204);
 }
 
 .title {
     -unity-font: url('project://database/Assets/UI/fonts/bondrians/Bondrians.ttf?fileID=12800000&guid=288136f92b46c3e498dea540a3b94304&type=3#Bondrians');
     font-size: 250px;
     -unity-font-definition: initial;
-    color: rgba(0, 0, 0, 255);
+    color: rgb(0, 0, 0);
+}
+
+.label {
+    font-size: 100px;
+    -unity-font: url('project://database/Assets/UI/fonts/Bondrians.ttf?fileID=12800000&guid=020e0f0476a49154fa6e78f8c004ddd7&type=3#Bondrians');
+    -unity-font-definition: initial;
+    -unity-text-align: upper-right;
 }
