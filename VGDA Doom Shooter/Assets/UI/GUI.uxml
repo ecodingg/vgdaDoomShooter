@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=c3bc908a11518994fba44593a085b37b&amp;type=3#GeneralStyle" />
+    <ui:VisualElement name="TopHolder" style="height: 196px;">
+        <ui:Label text="30/30" display-tooltip-when-elided="true" name="Ammo" class="label" style="height: 103px; -unity-font: url(&apos;project://database/Assets/UI/fonts/Bondrians.ttf?fileID=12800000&amp;guid=020e0f0476a49154fa6e78f8c004ddd7&amp;type=3#Bondrians&apos;); font-size: 100px; color: rgb(0, 0, 0); padding-left: 0; padding-right: 0; margin-right: 60px; margin-top: 35px;" />
+    </ui:VisualElement>
+</ui:UXML>

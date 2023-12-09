@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralStyle.uss?fileID=7433441132597879392&amp;guid=c3bc908a11518994fba44593a085b37b&amp;type=3#GeneralStyle" />
+    <ui:VisualElement>
+        <ui:Label text="Game Over" display-tooltip-when-elided="true" name="GameOverText" class="title" style="height: 555px; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/UI/fonts/Bondrians.ttf?fileID=12800000&amp;guid=020e0f0476a49154fa6e78f8c004ddd7&amp;type=3#Bondrians&apos;); -unity-text-align: lower-center; font-size: 300px;" />
+        <ui:VisualElement name="ButtonMenu" style="-unity-text-align: upper-left; flex-direction: row; align-items: flex-start; justify-content: center;">
+            <ui:Button text="Retry" display-tooltip-when-elided="true" name="Retry" class="button" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="Quit" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
