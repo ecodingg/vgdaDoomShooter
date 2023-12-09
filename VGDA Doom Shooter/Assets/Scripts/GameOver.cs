@@ -7,17 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public UIDocument uiDocument;
-    public PlayerHealth playerHealth;
-
-    void Start()
-    {
-        SetGameOverUIVisibility(false);
-    }
 
     private void OnEnable()
     {
-        int currentHealth = playerHealth.GetCurrentHealth();
-
         VisualElement root = uiDocument.rootVisualElement;
 
         Button buttonRetry = root.Q<Button>("Retry");
@@ -26,42 +18,17 @@ public class GameOver : MonoBehaviour
         buttonRetry.clicked += RetryButton;
         buttonQuit.clicked += QuitButton;
 
-        if (currentHealth >= 0)
-        {
-            root.visible = true;
-        }
-        else {
-            root.visible = false;
-        }
-
-    }
-
-    void Update()
-    {
-
     }
 
     private void RetryButton()
-    { //restarts level
+    {   //restarts level
         Debug.Log("restarting level");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
     }
 
     private void QuitButton()
-    { //quits application
-        Application.Quit();
+    {   //goes to main menu
+        SceneManager.LoadScene("UITest", LoadSceneMode.Single);
     }
 
-    private void SetGameOverUIVisibility(bool isVisible)
-    {
-        // Set the visibility of the game over UI elements
-        VisualElement root = uiDocument.rootVisualElement;
-        if (isVisible == false)
-        {
-            root.visible = false;
-        }
-        else {
-            root.visible = true;
-        }
-    }
 }

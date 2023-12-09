@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class PlayerHealth : MonoBehaviour
     public int healthP;
     public int maxHealth = 100;
     public CapsuleCollider collider;
-    public GameOver gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
         if(healthP <= 0)
         {
             Debug.Log("player died");
-            GetCurrentHealth();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //goes to game over scene
             //Destroy(gameObject);
         }
     }

@@ -28,3 +28,11 @@
     -unity-font-definition: initial;
     -unity-text-align: upper-right;
 }
+
+.icon {
+    -unity-background-scale-mode: scale-to-fit;
+    margin-left: 0;
+    margin-right: 1400px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
