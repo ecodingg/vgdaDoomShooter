@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     private void StartButton() { //starts game
         Debug.Log("start game");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("mainScene");
     }
 
     private void QuitButton() { //quits application
