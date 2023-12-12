@@ -21,7 +21,7 @@ public class GunSystem : MonoBehaviour
     public RaycastHit rayHit;
 
     //Graphics
-    public ParticleSystem muzzleFlash;
+    //public ParticleSystem muzzleFlash;
     //public CamShake camShake;
     //public float camShakeMagnitude, camShakeDuration;
     public TextMeshProUGUI text;
@@ -63,7 +63,7 @@ public class GunSystem : MonoBehaviour
         Vector3 direction = fpsCam.transform.forward + new Vector3(x, y, 0);
 
         //RayCast
-        muzzleFlash.Play();
+        //muzzleFlash.Play();
         if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range))
         {
             Debug.Log(rayHit.collider.name);
